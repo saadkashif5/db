@@ -1,0 +1,46 @@
+
+h2 {
+	 color: #f7e705;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+#gap {
+	margin-top: 20px;
+}
+#table {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+body, html {
+    background: #121212;
+    font-family: 'Kanit', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+th {
+	text-align: center;
+	color: #f7e705;
+	border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 15px;
+    border: 0px;
+}
+td {
+	text-align: center;
+	color: black;
+	border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 15px;
+    border: 0px;
+}
+.table {
+	border-radius: 10px;
+}
+
+table.rounded-corners {
+ border-spacing: 0;
+ border-collapse: separate;
+ border-radius: 10px;
+ border: 1px solid black;
+}
