@@ -131,15 +131,12 @@ input[type=submit]:hover{
 .btn-close {
 	background-color: #ffffff;
 }
-
-/*.test {
-	width: 30px;
-	height: 30px;
-}
-
-img {
-	margin-left: 0px;
-}*/
 button {
 	background: transparent;
+	border-radius: 5px;
+	border: none;
+}
+
+button:hover {
+	background-color: #212121;
 }
