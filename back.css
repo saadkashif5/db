@@ -1,12 +1,19 @@
 
-h2 {
+h2, h1 {
 	 color: #f7e705;
     text-align: center;
     font-family: 'Kanit', sans-serif;
 }
 
+#gap h2 {
+	margin-left: 10px;
+}
+
 #gap {
 	margin-top: 20px;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
 }
 #table {
 	margin-left: 15%;
@@ -34,13 +41,105 @@ td {
     border-radius: 15px;
     border: 0px;
 }
-.table {
-	border-radius: 10px;
+
+.marginform{
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  height: 50%;
+/*   width: 75%;*/
 }
 
-table.rounded-corners {
- border-spacing: 0;
- border-collapse: separate;
- border-radius: 10px;
- border: 1px solid black;
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  height: 4vh;
+  padding: 0px;
+  border: 3px solid #757575;
+  border-radius: 25px;
+  resize: vertical;
+  background: transparent;
+}
+
+::placeholder {
+	color: #f7e705;
+	opacity: 80%;
+	text-align: center;
+}
+
+label {
+  padding: 0px 0px 0px 0;
+  display: inline-block;
+}
+
+.container {
+/*  margin-left: 15%;
+  margin-right: 15%;*/
+  border-radius: 5px;
+  background-color: #121212;
+  padding: 0px; 
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .marginform, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+input[type=submit]
+{
+	width: 300px;
+	padding: 0px 0;
+	text-align: center;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 3px solid #757575;
+	color: #f7e705;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+    background-color: #212121;
+    height: 4vh;
+}
+
+input[type=submit]:hover{
+	background-color: #757575;
+	color: #f7e705;
+}
+
+
+.modal-header, .modal-dialog, .modal-content {
+	background-color: #121212;
+	color: #f7e705;
+}
+
+.modal-body {
+	color: #ffffff;
+}
+
+.btn-close {
+	background-color: #ffffff;
+}
+
+/*.test {
+	width: 30px;
+	height: 30px;
+}
+
+img {
+	margin-left: 0px;
+}*/
+button {
+	background: transparent;
 }
